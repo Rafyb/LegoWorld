@@ -34,7 +34,7 @@ Material:
     m_Floats:
     - _Normal: 0.398
     - _Roughness: 0.571
-    - __dirty: 0
+    - __dirty: 1
     m_Colors:
     - _Color: {r: 0, g: 0, b: 0, a: 0}
     - _Color0: {r: 0, g: 0, b: 0, a: 0}
