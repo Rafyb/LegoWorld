@@ -4,6 +4,7 @@ Shader "Lego"
 {
 	Properties
 	{
+		_Roughness("Roughness", Range( 0 , 1)) = 0.8
 		[HideInInspector] __dirty( "", Int ) = 1
 	}
 
@@ -19,10 +20,12 @@ Shader "Lego"
 			float4 vertexColor : COLOR;
 		};
 
+		uniform float _Roughness;
+
 		void surf( Input i , inout SurfaceOutputStandard o )
 		{
 			o.Albedo = i.vertexColor.rgb;
-			o.Smoothness = 0.8;
+			o.Smoothness = _Roughness;
 			o.Alpha = 1;
 		}
 
@@ -33,11 +36,11 @@ Shader "Lego"
 }
 /*ASEBEGIN
 Version=18500
-0;515;827;484;840.8831;236.8463;1.627867;False;False
-Node;AmplifyShaderEditor.RangedFloatNode;2;-225.2333,156.0173;Inherit;False;Constant;_Float0;Float 0;0;0;Create;True;0;0;False;0;False;0.8;0;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.VertexColorNode;1;-385.4574,-90.71961;Inherit;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+353;73;845;652;710.7573;192.9706;1.029081;True;False
+Node;AmplifyShaderEditor.RangedFloatNode;2;-321.9668,91.18513;Inherit;False;Property;_Roughness;Roughness;0;0;Create;True;0;0;False;0;False;0.8;0.8;0;1;0;1;FLOAT;0
+Node;AmplifyShaderEditor.VertexColorNode;1;-251.6766,-95.86503;Inherit;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;0,0;Float;False;True;-1;2;ASEMaterialInspector;0;0;Standard;Lego;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Opaque;0.5;True;True;0;False;Opaque;;Geometry;All;14;all;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;False;2;15;10;25;False;0.5;True;0;0;False;-1;0;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;-1;-1;-1;-1;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;False;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
 WireConnection;0;0;1;0
 WireConnection;0;4;2;0
 ASEEND*/
-//CHKSM=72C63C9E2D643EEB5640366C9EB2A9049B9FCBAF
+//CHKSM=BABB715EB64D6E3BB971C321F5CBE96B28224D61
