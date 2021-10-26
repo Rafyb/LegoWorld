@@ -190,7 +190,7 @@ Transform:
   m_Children:
   - {fileID: 1362093461}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &394191614
 MonoBehaviour:
@@ -3617,63 +3617,6 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   priority: 0
---- !u!1001 &1298988889
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 20e4b5bf596fb7949b53110e4b2ca033, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 20e4b5bf596fb7949b53110e4b2ca033, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 65.58572
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 20e4b5bf596fb7949b53110e4b2ca033, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 183.58301
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 20e4b5bf596fb7949b53110e4b2ca033, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 73.2781
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 20e4b5bf596fb7949b53110e4b2ca033, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 20e4b5bf596fb7949b53110e4b2ca033, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 20e4b5bf596fb7949b53110e4b2ca033, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 20e4b5bf596fb7949b53110e4b2ca033, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 20e4b5bf596fb7949b53110e4b2ca033, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 20e4b5bf596fb7949b53110e4b2ca033, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 20e4b5bf596fb7949b53110e4b2ca033, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 20e4b5bf596fb7949b53110e4b2ca033, type: 3}
-      propertyPath: m_Name
-      value: tree1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 20e4b5bf596fb7949b53110e4b2ca033, type: 3}
 --- !u!1 &1362093459
 GameObject:
   m_ObjectHideFlags: 0
@@ -4159,6 +4102,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3492586632431973809, guid: 4715c7948fbf84c47b36faf7d6d0683e, type: 3}
+      propertyPath: m_RenderingPath
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3492586632628201608, guid: 4715c7948fbf84c47b36faf7d6d0683e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4251,7 +4198,7 @@ MonoBehaviour:
     m_Bits: 64
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
-  antialiasingMode: 3
+  antialiasingMode: 1
   temporalAntialiasing:
     jitterSpread: 0.75
     sharpness: 0.25
@@ -4293,3 +4240,21 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &3492586633192965735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3492586633192965733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c520d478f3d2445429bd7ac9c92b03a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  postProcessLayer: {fileID: 3492586633192965734}
+  lightMeter: 1
+  histogram: 0
+  waveform: 0
+  vectorscope: 0
+  debugOverlay: 0
