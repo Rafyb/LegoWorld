@@ -38,6 +38,7 @@ Material:
     m_Floats:
     - _EdgeDistance: 0.11
     - _EdgePower: 0.1
+    - _Float0: 0
     - _Height: 0.68
     - _NormalSpeed: 0.1
     - _NormalStrength: 1
@@ -45,6 +46,7 @@ Material:
     - _Speed: 0.1
     - _TileNormal: 0.3
     - _TilingWave: 1.38
+    - _Transparence: 0.25
     - __dirty: 0
     m_Colors:
     - _Direction: {r: 0.5, g: 0.25, b: 0, a: 0}
@@ -52,7 +54,7 @@ Material:
     - _Ripple: {r: 0, g: 1, b: 0, a: 0}
     - _Speed: {r: 0, g: 0, b: 0, a: 0}
     - _Stretch: {r: 0.25, g: 0.05, b: 0, a: 0}
-    - _TopColor: {r: 0.23529407, g: 0.5411765, b: 0.7019608, a: 1}
+    - _TopColor: {r: 0.030437866, g: 0.47763586, b: 0.7169812, a: 1}
     - _Vector0: {r: 1, g: 1, b: 0, a: 0}
-    - _WaterColor: {r: 0.23529407, g: 0.58431375, b: 0.7019608, a: 0}
+    - _WaterColor: {r: 0.112273075, g: 0.6318263, b: 0.8207547, a: 1}
   m_BuildTextureStacks: []
