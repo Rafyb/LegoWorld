@@ -46,7 +46,7 @@ Material:
     - _Speed: 0.1
     - _TileNormal: 0.3
     - _TilingWave: 1.38
-    - _Transparence: 0.25
+    - _Transparence: 0.75
     - __dirty: 0
     m_Colors:
     - _Direction: {r: 0.5, g: 0.25, b: 0, a: 0}
